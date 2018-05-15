@@ -7,7 +7,6 @@ namespace JsonBenchmark
         static void Main(string[] args)
         {
             BenchmarkRunner.Run<JsonDeserializersBenchmarks>();
-            BenchmarkRunner.Run<JsonSerializersBenchmarks>();
         }
     }
 }
