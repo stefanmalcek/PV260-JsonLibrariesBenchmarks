@@ -1,12 +1,19 @@
-﻿namespace JsonBenchmark.TestDTOs
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace JsonBenchmark.TestDTOs
 {
+
     public class Rootobject
     {
-        public ResultData[] result { get; set; }
+        public Data[] result { get; set; }
         public int status_code { get; set; }
     }
 
-    public class ResultData
+    public class Data
     {
         public int id { get; set; }
         public string name_cs { get; set; }
@@ -16,6 +23,7 @@
         public int available_computers { get; set; }
         public int total_computers { get; set; }
         public Schedule schedule { get; set; }
+        public object[] summer_schedule { get; set; }
         public string[] additional_services { get; set; }
         public string[] room_codes { get; set; }
     }

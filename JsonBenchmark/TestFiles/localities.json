@@ -1,12 +1,12 @@
 ﻿{
-  "result_data": [
+  "result": [
     {
       "id": 1242,
       "name_cs": "Počítačová studovna na PrF",
       "name_en": "Computer room at Faculty of Law",
       "address": "Veveří 70",
       "link": "https://www.law.muni.cz/content/cs/navody/pocitacove-studovny/",
-      "available_computers": 36,
+      "available_computers": 46,
       "total_computers": 46,
       "schedule": {
         "monday": [
@@ -40,6 +40,7 @@
           }
         ]
       },
+      "summer_schedule": [],
       "additional_services": [
         "Printing"
       ],
@@ -54,7 +55,7 @@
       "name_en": "Central library at Faculty of Law",
       "address": "Veveří 70",
       "link": "https://library.law.muni.cz/content/cs/",
-      "available_computers": 7,
+      "available_computers": 15,
       "total_computers": 15,
       "schedule": {
         "monday": [
@@ -88,15 +89,16 @@
           }
         ]
       },
+      "summer_schedule": [],
       "additional_services": [
         "Printing"
       ],
       "room_codes": [
-        "BVC01P01032",
+        "BVC01P01030",
         "BVC01P01031",
-        "BVC01P01010",
         "BVC01P01007a",
-        "BVC01P01030"
+        "BVC01P01010",
+        "BVC01P01032"
       ]
     },
     {
@@ -105,7 +107,7 @@
       "name_en": "Central library at Faculty of Social Studies",
       "address": "Joštova 10",
       "link": "http://knihovna.fss.muni.cz/",
-      "available_computers": 13,
+      "available_computers": 37,
       "total_computers": 37,
       "schedule": {
         "monday": [
@@ -145,15 +147,16 @@
           }
         ]
       },
+      "summer_schedule": [],
       "additional_services": [
         "Printing"
       ],
       "room_codes": [
-        "BMB02N01051",
-        "BMB02N01054",
         "BMB02N01052",
+        "BMB02N01051",
         "BMB02N01031",
-        "BMB02N01030"
+        "BMB02N01030",
+        "BMB02N01054"
       ]
     },
     {
@@ -162,7 +165,7 @@
       "name_en": "Central library at Faculty of Science",
       "address": "Kotlářská 267/2",
       "link": "http://knihovna.sci.muni.cz/",
-      "available_computers": 67,
+      "available_computers": 77,
       "total_computers": 77,
       "schedule": {
         "monday": [
@@ -196,17 +199,18 @@
           }
         ]
       },
+      "summer_schedule": [],
       "additional_services": [
         "Printing"
       ],
       "room_codes": [
-        "BVB12N03009b",
+        "BVB12N03009a",
         "BVB12M01050",
-        "BVB12N02010a",
         "BVB12N01011",
+        "BVB12N03009b",
         "BVB12N02009a",
         "BVB12N02009b",
-        "BVB12N03009a"
+        "BVB12N02010a"
       ]
     },
     {
@@ -215,7 +219,7 @@
       "name_en": "Internet club at Faculty of Science",
       "address": "Kotlářská 267/2",
       "link": "http://knihovna.sci.muni.cz/",
-      "available_computers": 15,
+      "available_computers": 16,
       "total_computers": 16,
       "schedule": {
         "monday": [
@@ -249,6 +253,7 @@
           }
         ]
       },
+      "summer_schedule": [],
       "additional_services": [
         "Printing"
       ],
@@ -262,7 +267,7 @@
       "name_en": "University Campus library",
       "address": "Kamenice 5",
       "link": "https://kuk.muni.cz/",
-      "available_computers": 68,
+      "available_computers": 114,
       "total_computers": 115,
       "schedule": {
         "monday": [
@@ -308,17 +313,18 @@
           }
         ]
       },
+      "summer_schedule": [],
       "additional_services": [
         "DocumentBinding",
         "SellingOfficeSupplies",
         "Printing"
       ],
       "room_codes": [
-        "BHA10N01011",
-        "BHA10N01002",
         "BHA10N01010",
         "BHA10N01006",
-        "BHA10M02001"
+        "BHA10M02001",
+        "BHA10N01002",
+        "BHA10N01011"
       ]
     },
     {
@@ -373,6 +379,7 @@
           }
         ]
       },
+      "summer_schedule": [],
       "additional_services": [
         "Printing"
       ],
@@ -386,7 +393,7 @@
       "name_en": "Central university computer room",
       "address": "Komenského nám. 2",
       "link": "https://it.muni.cz/prehledy/pc-studovny/sluzby/cps",
-      "available_computers": 20,
+      "available_computers": 60,
       "total_computers": 108,
       "schedule": {
         "monday": [
@@ -432,6 +439,7 @@
           }
         ]
       },
+      "summer_schedule": [],
       "additional_services": [
         "DocumentBinding",
         "SellingOfficeSupplies",
@@ -439,9 +447,9 @@
       ],
       "room_codes": [
         "BMB01N01027",
-        "BMB01N01028",
         "BMB01N01026",
-        "BMB01N01025"
+        "BMB01N01025",
+        "BMB01N01028"
       ]
     },
     {
@@ -450,7 +458,7 @@
       "name_en": "Central library at Faculty of Arts",
       "address": "Arne Nováka 1",
       "link": "http://knihovna.phil.muni.cz/",
-      "available_computers": 47,
+      "available_computers": 92,
       "total_computers": 92,
       "schedule": {
         "monday": [
@@ -496,6 +504,7 @@
           }
         ]
       },
+      "summer_schedule": [],
       "additional_services": [
         "Printing"
       ],
@@ -513,7 +522,7 @@
       "name_en": "Central library at Faculty of Education",
       "address": "Poříčí 31a",
       "link": "https://katedry.ped.muni.cz/knihovna",
-      "available_computers": 38,
+      "available_computers": 45,
       "total_computers": 45,
       "schedule": {
         "monday": [
@@ -559,16 +568,13 @@
           }
         ]
       },
+      "summer_schedule": [],
       "additional_services": [
         "Printing"
       ],
       "room_codes": [
-        "BBA11N03017a",
-        "BBA11N03017b",
         "BBA11N03016",
         "BBA11N02012",
-        "BBA11N01019b",
-        "BBA11N01019a",
         "BBA11N01020"
       ]
     }

@@ -1,11 +1,10 @@
 ﻿using System.IO;
-using System.Linq;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Attributes.Columns;
 using BenchmarkDotNet.Attributes.Exporters;
 using BenchmarkDotNet.Attributes.Jobs;
-using ChoETL;
 using JsonBenchmark.TestDTOs;
+using LitJson;
 using Newtonsoft.Json;
 
 namespace JsonBenchmark
@@ -22,9 +21,9 @@ namespace JsonBenchmark
         }
 
         [Benchmark]
-        public Root ChoETL_Deserialize_File()
+        public Rootobject NewtonsoftJson_DeserializeAnotherJson_String()
         {
-            return new ChoJSONReader<Root>(FilePath).FirstOrDefault();
+            return JsonConvert.DeserializeObject<Rootobject>(JsonAnotherSampleString);
         }
 
         [Benchmark]
@@ -43,6 +42,24 @@ namespace JsonBenchmark
                 var serializer = new JsonSerializer();
                 return serializer.Deserialize<Root>(jsonTextReader);
             }
+        }
+
+        [Benchmark]
+        public Root ServiceStack_Deserialize_String()
+        {
+            return ServiceStack.Text.JsonSerializer.DeserializeFromString<Root>(JsonSampleString);
+        }
+
+        [Benchmark]
+        public Root LitJson_Deserialize_String()
+        {
+            return JsonMapper.ToObject<Root>(JsonSampleString);
+        }
+
+        [Benchmark]
+        public Root Utf8Json_Deserialize_String()
+        {
+            return Utf8Json.JsonSerializer.Deserialize<Root>(JsonSampleString);
         }
     }
 }
